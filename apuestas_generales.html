@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Cabecera del Documento -->
+<head>
+	<meta charset="utf-8">
+	<title>TorrEUro2024</title>
+  	<link rel="icon" href="imagenes/leon.png" type="image/png">
+	<!-- CSS externo para añadir estilos -->
+	<link rel="stylesheet" type="text/css" href="apuestas_generales.css">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+</head>
+
+<body>
+	<header>
+		<!-- Si lo hicieramos con CSS en línea: <h1 style="text-align:center;">Hola que tal</h1> -->
+		<table>
+			<tr>			
+				<th style="text-align:left; border-bottom: 2px solid black;"><p class="titulo">APUESTAS > Apuestas Generales</p></th>				
+				<th style="text-align:right; padding-right: 30px; border-bottom: 2px solid black;"><img src="imagenes/logoEuro2024.png" alt="Logo Euro2024"></th>
+			</tr>			
+			<tr>
+				<td>
+					<nav>
+						<ul style="margin-top: 30px;">
+							<li><a href="index.html">INICIO</a></li>
+							<li><a style="background-color: darkblue; color:white;">APUESTAS</a>
+								<ul>
+									<li><a>____________________</a></li>
+                                  	<li><a style="color: darkgrey;">Apuestas Generales</a></li>
+									<li><a style="color: darkred;" href="jornada1b.html">Jornada 1</a></li>
+									<li><a style="color: darkred;" href="jornada2b.html">Jornada 2</a></li>
+									<li><a style="color: darkred;" href="jornada3.html">Jornada 3</a></li>
+									<li><a style="color: darkred;" href="octavos.html">Octavos</a></li>
+									<li><a style="color: darkred;" href="cuartos.html">Cuartos</a></li>
+									<li><a style="color: darkred;" href="semis.html">Semifinales</a></li>
+									<li><a class="activo" href="final.html">Final</a></li>
+								</ul>
+							</li>
+							<li><a href="consultar_apuestas.php">CONSULTAR</a></li>
+							<li><a href="clasificacion.html">CLASIFICACIÓN</a></li>
+						</ul>		
+					</nav>
+				</td>
+			</tr>			
+		</table>			
+	</header>
+	
+<form action="insertar_apuestas_generales.php" method="post">
+	<fieldset class="fieldset_equipos"> <!-- Equipos -->
+		<legend>EQUIPOS</legend>
+			<label>Campeón:</label>
+			<select id="campeon" name="campeon" onchange="updateFlag('campeon')">
+				<option value="" disabled selected style="display:none;">Selecciona un país</option>
+				<option value="Alemania"> Alemania</option>
+				<option value="Escocia"> Escocia</option>
+				<option value="Hungria"> Hungría</option>
+				<option value="Suiza"> Suiza</option>
+				<option value="Espana"> España</option>
+				<option value="Croacia"> Croacia</option>
+				<option value="Italia"> Italia</option>
+				<option value="Albania"> Albania</option>
+				<option value="Eslovenia"> Eslovenia</option>
+				<option value="Dinamarca"> Dinamarca</option>
+				<option value="Serbia"> Serbia</option>
+				<option value="Inglaterra"> Inglaterra</option>
+				<option value="Polonia"> Polonia</option>
+				<option value="Paises Bajos"> Países Bajos</option>
+				<option value="Austria"> Austria</option>
+				<option value="Francia"> Francia</option>
+				<option value="Belgica"> Bélgica</option>
+				<option value="Eslovaquia"> Eslovaquia</option>
+				<option value="Rumania"> Rumanía</option>
+				<option value="Ucrania"> Ucrania</option>
+				<option value="Turquia"> Turquía</option>
+				<option value="Georgia"> Georgia</option>
+				<option value="Portugal"> Portugal</option>
+				<option value="Chequia"> Chequia</option>				
+			</select>
+			<img style="width: 30px; height: 30px;" id="campeonFlag" src="imagenes/aaa.png" alt="Bandera del campeón"> 
+			
+			<label>2º Clasificado:</label>
+			<select id="2_clasificado" name="2_clasificado" onchange="updateFlag('2_clasificado')">
+				<option value="" disabled selected style="display:none;">Selecciona un país</option>
+				<option value="Alemania"> Alemania</option>
+				<option value="Escocia"> Escocia</option>
+				<option value="Hungria"> Hungría</option>
+				<option value="Suiza"> Suiza</option>
+				<option value="Espana"> España</option>
+				<option value="Croacia"> Croacia</option>
+				<option value="Italia"> Italia</option>
+				<option value="Albania"> Albania</option>
+				<option value="Eslovenia"> Eslovenia</option>
+				<option value="Dinamarca"> Dinamarca</option>
+				<option value="Serbia"> Serbia</option>
+				<option value="Inglaterra"> Inglaterra</option>
+				<option value="Polonia"> Polonia</option>
+				<option value="Paises Bajos"> Países Bajos</option>
+				<option value="Austria"> Austria</option>
+				<option value="Francia"> Francia</option>
+				<option value="Belgica"> Bélgica</option>
+				<option value="Eslovaquia"> Eslovaquia</option>
+				<option value="Rumania"> Rumanía</option>
+				<option value="Ucrania"> Ucrania</option>
+				<option value="Turquia"> Turquía</option>
+				<option value="Georgia"> Georgia</option>
+				<option value="Portugal"> Portugal</option>
+				<option value="Chequia"> Chequia</option>
+			</select>
+			<img style="width: 30px; height: 30px;" id="2_clasificadoFlag" src="imagenes/aaa.png" alt="Bandera del subcampeón"> 
+		
+			<label>Semifinalista 1:</label>
+			<select id="semifinalista_1" name="semifinalista_1" onchange="updateFlag('semifinalista_1')">
+				<option value="" disabled selected style="display:none;">Selecciona un país</option>
+				<option value="Alemania"> Alemania</option>
+				<option value="Escocia"> Escocia</option>
+				<option value="Hungria"> Hungría</option>
+				<option value="Suiza"> Suiza</option>
+				<option value="Espana"> España</option>
+				<option value="Croacia"> Croacia</option>
+				<option value="Italia"> Italia</option>
+				<option value="Albania"> Albania</option>
+				<option value="Eslovenia"> Eslovenia</option>
+				<option value="Dinamarca"> Dinamarca</option>
+				<option value="Serbia"> Serbia</option>
+				<option value="Inglaterra"> Inglaterra</option>
+				<option value="Polonia"> Polonia</option>
+				<option value="Paises Bajos"> Países Bajos</option>
+				<option value="Austria"> Austria</option>
+				<option value="Francia"> Francia</option>
+				<option value="Belgica"> Bélgica</option>
+				<option value="Eslovaquia"> Eslovaquia</option>
+				<option value="Rumania"> Rumanía</option>
+				<option value="Ucrania"> Ucrania</option>
+				<option value="Turquia"> Turquía</option>
+				<option value="Georgia"> Georgia</option>
+				<option value="Portugal"> Portugal</option>
+				<option value="Chequia"> Chequia</option>
+			</select>
+			<img style="width: 30px; height: 30px;" id="semifinalista_1Flag" src="imagenes/aaa.png" alt="Bandera de semifinalista 1">
+			
+			<label>Semifinalista 2:</label>
+			<select id="semifinalista_2" name="semifinalista_2" onchange="updateFlag('semifinalista_2')">
+				<option value="" disabled selected style="display:none;">Selecciona un país</option>
+				<option value="Alemania"> Alemania</option>
+				<option value="Escocia"> Escocia</option>
+				<option value="Hungria"> Hungría</option>
+				<option value="Suiza"> Suiza</option>
+				<option value="Espana"> España</option>
+				<option value="Croacia"> Croacia</option>
+				<option value="Italia"> Italia</option>
+				<option value="Albania"> Albania</option>
+				<option value="Eslovenia"> Eslovenia</option>
+				<option value="Dinamarca"> Dinamarca</option>
+				<option value="Serbia"> Serbia</option>
+				<option value="Inglaterra"> Inglaterra</option>
+				<option value="Polonia"> Polonia</option>
+				<option value="Paises Bajos"> Países Bajos</option>
+				<option value="Austria"> Austria</option>
+				<option value="Francia"> Francia</option>
+				<option value="Belgica"> Bélgica</option>
+				<option value="Eslovaquia"> Eslovaquia</option>
+				<option value="Rumania"> Rumanía</option>
+				<option value="Ucrania"> Ucrania</option>
+				<option value="Turquia"> Turquía</option>
+				<option value="Georgia"> Georgia</option>
+				<option value="Portugal"> Portugal</option>
+				<option value="Chequia"> Chequia</option>
+			</select>
+			<img style="width: 30px; height: 30px;" id="semifinalista_2Flag" src="imagenes/aaa.png" alt="Bandera de semifinalista 2">
+			
+			<label>Máx goleador:</label>
+			<select id="max_goleador_equipo" name="max_goleador_equipo" onchange="updateFlag('max_goleador_equipo')">
+				<option value="" disabled selected style="display:none;">Selecciona un país</option>
+				<option value="Alemania"> Alemania</option>
+				<option value="Escocia"> Escocia</option>
+				<option value="Hungria"> Hungría</option>
+				<option value="Suiza"> Suiza</option>
+				<option value="Espana"> España</option>
+				<option value="Croacia"> Croacia</option>
+				<option value="Italia"> Italia</option>
+				<option value="Albania"> Albania</option>
+				<option value="Eslovenia"> Eslovenia</option>
+				<option value="Dinamarca"> Dinamarca</option>
+				<option value="Serbia"> Serbia</option>
+				<option value="Inglaterra"> Inglaterra</option>
+				<option value="Polonia"> Polonia</option>
+				<option value="Paises Bajos"> Países Bajos</option>
+				<option value="Austria"> Austria</option>
+				<option value="Francia"> Francia</option>
+				<option value="Belgica"> Bélgica</option>
+				<option value="Eslovaquia"> Eslovaquia</option>
+				<option value="Rumania"> Rumanía</option>
+				<option value="Ucrania"> Ucrania</option>
+				<option value="Turquia"> Turquía</option>
+				<option value="Georgia"> Georgia</option>
+				<option value="Portugal"> Portugal</option>
+				<option value="Chequia"> Chequia</option>				
+			</select>
+			<img style="width: 30px; height: 30px;" id="max_goleador_equipoFlag" src="imagenes/aaa.png" alt="Bandera de equipo máximo goleador">
+			
+	</fieldset>
+	
+	<fieldset class="fieldset_jugadores"> <!-- Jugadores -->
+		<legend>JUGADORES</legend>
+			<label>Máximo Goleador:</label>
+			<input type="text" name="max_goleador_jugador">
+			<label>MVP:</label>
+			<input type="text" name="mvp">			
+	</fieldset>
+
+	<fieldset class="fieldset_jugadores"> <!-- España -->
+		<legend>ESPAÑA</legend>
+			<label>Máximo Goleador:</label>
+			<input type="text" name="max_goleador_spain">
+			<label>Posición:</label>
+			<select name="posicion_spain">
+				<option value="" disabled selected style="display:none;">Selecciona una posición</option>
+				<option value="Fase grupos"> Cae en fase de grupos</option>
+				<option value="Octavos"> Cae en octavos</option>
+				<option value="Cuartos"> Cae en cuartos</option>
+				<option value="Semis"> Cae en semis</option>
+				<option value="Subcampeón"> 2º Clasificado</option>
+				<option value="Campeón"> Campeón</option>								
+			</select>
+	</fieldset>
+	
+	<!--  	
+  <table class="tabla_submit">
+		<tr>
+			<th><input type="submit" name="enviar_user1" value="Enviar Marcelino"></th>
+			<th><input type="submit" name="enviar_user2" value="Enviar Dani"></th>
+			<th><input type="submit" name="enviar_user3" value="Enviar Pipo"></th>
+			<th><input type="submit" name="enviar_user4" value="Enviar Carlos"></th>
+			<th><input type="submit" name="enviar_user5" value="Enviar Adan"></th>
+		</tr>			
+	</table>
+
+	<br>
+	
+  	
+	<label for="password" style="margin-left: 20px;">Contraseña:</label>
+	<input type="password" name="password" id="password">
+	-->
+
+	<hr>
+
+	
+</form>
+
+<script src="script_bandera.js"></script>
+	
+</body>
+
+</html>

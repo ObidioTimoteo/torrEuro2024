@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Cabecera del Documento -->
+<head>
+	<meta charset="utf-8">
+	<title>Jornada 1</title>
+  	<link rel="icon" href="imagenes/leon.png" type="image/png">
+	<!-- CSS externo para añadir estilos -->
+	<link rel="stylesheet" type="text/css" href="torreuro2024.css">
+</head>
+
+<body>
+	<header>	
+		<!-- Si lo hicieramos con CSS en línea: <h1 style="text-align:center;">Hola que tal</h1> -->
+		<table>
+			<tr>			
+				<th style="text-align:left; border-bottom: 2px solid black;"><p class="titulo">APUESTAS > Jornada 1</p></th>				
+				<th style="text-align:right; padding-right: 30px; border-bottom: 2px solid black;"><img src="imagenes/logoEuro2024.png" alt="Logo Euro2024"></th>
+			</tr>			
+			<tr>
+				<td>
+					<nav>
+						<ul style="margin-top: 30px;">
+							<li><a href="index.html">INICIO</a></li>
+							<li><a style="background-color: darkblue; color:white;">APUESTAS</a>
+								<ul>
+									<li><a>____________________</a></li>
+                                  	<li><a style="color: darkgrey;">Apuestas Generales</a></li>
+									<li><a style="color: darkred;" href="jornada1b.html">Jornada 1</a></li>
+									<li><a style="color: darkred;" href="jornada2b.html">Jornada 2</a></li>
+									<li><a style="color: darkred;" href="jornada3.html">Jornada 3</a></li>
+									<li><a style="color: darkred;" href="octavos.html">Octavos</a></li>
+									<li><a style="color: darkred;" href="cuartos.html">Cuartos</a></li>
+									<li><a style="color: darkred;" href="semis.html">Semifinales</a></li>
+									<li><a class="activo" href="final.html">Final</a></li>
+								</ul>
+							</li>
+							<li><a href="consultar_apuestas.php">CONSULTAR</a></li>
+							<li><a href="clasificacion.html">CLASIFICACIÓN</a></li>
+						</ul>		
+					</nav>
+				</td>
+			</tr>			
+		</table>			
+	</header>	
+	
+<form action="insertar_apuestas_j1.php" method="post">
+	<fieldset> <!-- Jornada 1 > Grupo A -->
+		<legend>Grupo A</legend>
+			<!-- Alemania - Escocia -->
+			<label class="partido">14/06/24, Munich, 21h00</label>
+			<img src="imagenes/alemania.png" alt="alemania bandera">
+			<label style="text-align: right;">Alemania</label>
+			<label style="text-align: center;">5</label>
+			<label style="text-align: center;">-</label>
+			<label style="text-align: center;">1</label>			
+			<label>Escocia</label>
+			<img src="imagenes/escocia.png" alt="escocia bandera">
+			
+			<!-- Hungría - Suiza -->
+			<label class="partido">15/06/24, Colonia, 15h00</label>
+			<img src="imagenes/hungria.png" alt="hungria bandera">
+			<label style="text-align: right;">Hungría</label>
+			<label style="text-align: center;">1</label>
+			<label style="text-align: center;">-</label>
+			<label style="text-align: center;">3</label>			
+			<label>Suiza</label>
+			<img src="imagenes/suiza.png" alt="suiza bandera">			
+	</fieldset>
+	
+	<fieldset class="jornada"> <!-- Jornada 1 > Grupo B -->
+		<legend>Grupo B</legend>
+			<!-- España - Croacia -->
+			<label class="partido">15/06/24, Berlín, 18h00</label>
+			<img src="imagenes/espana.png" alt="espana bandera">
+			<label style="text-align: right;">España</label>
+			<label style="text-align: center;">3</label>
+			<label style="text-align: center;">-</label>
+			<label style="text-align: center;">0</label>			
+			<label>Croacia</label>
+			<img src="imagenes/croacia.png" alt="croacia bandera">
+			
+			<!-- Italia - Albania -->
+			<label class="partido">15/06/24, Dortmund, 21h00</label>
+			<img src="imagenes/italia.png" alt="italia bandera">
+			<label style="text-align: right;">Italia</label>
+			<label style="text-align: center;">2</label>
+			<label style="text-align: center;">-</label>
+			<label style="text-align: center;">1</label>			
+			<label>Albania</label>
+			<img src="imagenes/albania.png" alt="albania bandera">
+	</fieldset>
+
+	<fieldset class="jornada"> <!-- Jornada 1 > Grupo C -->
+		<legend>Grupo C</legend>			
+			<!-- Eslovenia - Dinamarca -->
+			<label class="partido">16/06/24, Stuttgart, 18h00</label>
+			<img src="imagenes/eslovenia.png" alt="eslovenia bandera">
+			<label style="text-align: right;">Eslovenia</label>
+			<label style="text-align: center;">1</label>
+			<label style="text-align: center;">-</label>
+			<label style="text-align: center;">1</label>			
+			<label>Dinamarca</label>
+			<img src="imagenes/dinamarca.png" alt="dinamarca bandera">
+			
+			<!-- Serbia - Inglaterra -->
+			<label class="partido">16/06/24, Gelsenkirchen, 21h00</label>
+			<img src="imagenes/serbia.png" alt="serbia bandera">
+			<label style="text-align: right;">Serbia</label>
+			<label style="text-align: center;">0</label>
+			<label style="text-align: center;">-</label>
+			<label style="text-align: center;">1</label>			
+			<label>Inglaterra</label>
+			<img src="imagenes/inglaterra.png" alt="inglaterra bandera">			
+	</fieldset>
+	
+	<fieldset class="jornada"> <!-- Jornada 1 > Grupo D -->
+		<legend>Grupo D</legend>
+			<!-- Polonia - Países Bajos -->
+			<label class="partido">16/06/24, Hamburgo, 15h00</label>
+			<img src="imagenes/polonia.png" alt="polonia bandera">
+			<label style="text-align: right;">Polonia</label>
+			<label style="text-align: center;">1</label>
+			<label style="text-align: center;">-</label>
+			<label style="text-align: center;">2</label>			
+			<label>Países Bajos</label>
+			<img src="imagenes/paises bajos.png" alt="paises_bajos bandera">
+			
+			<!-- Austria - Francia -->
+			<label class="partido">17/06/24, Düsseldorf, 21h00</label>
+			<img src="imagenes/austria.png" alt="austria bandera">
+			<label style="text-align: right;">Austria</label>
+			<label style="text-align: center;">0</label>
+			<label style="text-align: center;">-</label>
+			<label style="text-align: center;">1</label>			
+			<label>Francia</label>
+			<img src="imagenes/francia.png" alt="francia bandera">			
+	</fieldset>
+	
+	<fieldset class="jornada"> <!-- Jornada 1 > Grupo E -->
+		<legend>Grupo E</legend>
+			<!-- Rumanía - Ucrania -->
+			<label class="partido">17/06/24, Munich, 15h00</label>
+			<img src="imagenes/rumania.png" alt="rumania bandera">
+			<label style="text-align: right;">Rumanía</label>
+			<label style="text-align: center;">3</label>
+			<label style="text-align: center;">-</label>
+			<label style="text-align: center;">0</label>			
+			<label>Ucrania</label>
+			<img src="imagenes/ucrania.png" alt="ucrania bandera">
+		
+			<!-- Bélgica - Eslovaquia -->
+			<label class="partido">17/06/24, Frankfurt, 18h00</label>
+			<img src="imagenes/belgica.png" alt="belgica bandera">
+			<label style="text-align: right;">Bélgica</label>
+			<label style="text-align: center;">0</label>
+			<label style="text-align: center;">-</label>
+			<label style="text-align: center;">1</label>			
+			<label>Eslovaquia</label>
+			<img src="imagenes/eslovaquia.png" alt="eslovaquia bandera">			
+	</fieldset>
+	
+	<fieldset class="jornada"> <!-- Jornada 1 > Grupo F -->
+		<legend>Grupo F</legend>
+			<!-- Turquía - Georgia -->
+			<label class="partido">18/06/24, Dortmund, 18h00</label>
+			<img src="imagenes/turquia.png" alt="turquia bandera">
+			<label style="text-align: right;">Turquía</label>
+			<label style="text-align: center;">3</label>
+			<label style="text-align: center;">-</label>
+			<label style="text-align: center;">1</label>			
+			<label>Georgia</label>
+			<img src="imagenes/georgia.png" alt="georgia bandera">
+			
+			<!-- Portugal - Chequia -->
+			<label class="partido">18/06/24, Leipzig, 21h00</label>
+			<img src="imagenes/portugal.png" alt="portugal bandera">
+			<label style="text-align: right;">Portugal</label>
+			<label style="text-align: center;">2</label>
+			<label style="text-align: center;">-</label>
+			<label style="text-align: center;">1</label>			
+			<label>Chequia</label>
+			<img src="imagenes/chequia.png" alt="chequia bandera">
+	</fieldset>
+
+	<!--
+  	<table class="tabla_submit">
+		<tr>
+			<th><input type="submit" name="enviar_user1" value="Enviar Marcelino"></th>
+			<th><input type="submit" name="enviar_user2" value="Enviar Dani"></th>
+			<th><input type="submit" name="enviar_user3" value="Enviar Pipo"></th>
+			<th><input type="submit" name="enviar_user4" value="Enviar Carlos"></th>
+			<th><input type="submit" name="enviar_user5" value="Enviar Adan"></th>
+		</tr>			
+	</table>
+
+	<br>
+	
+	<label for="password" class="label_password">Contraseña:     </label>
+	<input type="password" name="password" id="password">
+	<hr>
+	-->
+
+</form>
+	
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Cabecera del Documento -->
+<head>
+	<meta charset="utf-8">
+	<title>Cuartos</title>
+	<!-- CSS externo para añadir estilos -->
+	<link rel="stylesheet" type="text/css" href="TORREURO2024.css">
+</head>
+
+<body>
+	<header>	
+		<!-- Si lo hicieramos con CSS en línea: <h1 style="text-align:center;">Hola que tal</h1> -->
+		<table>
+			<tr>			
+				<th style="text-align:left; border-bottom: 2px solid black;"><p class="titulo">APUESTAS > Cuartos</p></th>				
+				<th style="text-align:right; padding-right: 30px; border-bottom: 2px solid black;"><img src="imagenes/logoEuro2024.png" alt="Logo Euro2024"></th>
+			</tr>			
+			<tr>
+				<td>
+					<nav>
+						<ul style="margin-top: 30px;">
+							<li><a href="index.html">INICIO</a></li>
+							<li><a style="background-color: darkblue; color:white;">APUESTAS</a>
+								<ul>
+									<li><a>____________________</a></li>
+                                  	<li><a style="color: darkgrey;">Apuestas Generales</a></li>
+									<li><a style="color: darkred;" href="jornada1b.html">Jornada 1</a></li>
+									<li><a style="color: darkred;" href="jornada2b.html">Jornada 2</a></li>
+									<li><a style="color: darkred;" href="jornada3.html">Jornada 3</a></li>
+									<li><a style="color: darkred;" href="octavos.html">Octavos</a></li>
+									<li><a style="color: darkred;" href="cuartos.html">Cuartos</a></li>
+									<li><a style="color: darkred;" href="semis.html">Semifinales</a></li>
+									<li><a class="activo" href="final.html">Final</a></li>
+								</ul>
+							</li>
+							<li><a href="consultar_apuestas.php">CONSULTAR</a></li>
+							<li><a href="clasificacion.html">CLASIFICACIÓN</a></li>
+						</ul>		
+					</nav>
+				</td>
+			</tr>			
+		</table>			
+	</header>
+	
+	
+	
+	
+<form action="insertar_apuestas_cuartos.php" method="post">
+	<fieldset class="jornada1"> <!-- Cuartos > 05/07/2024 -->
+		<legend>05/07/2024</legend>
+			<!-- Xxxxx - Xxxxx -->
+			<label class="partido">05/07/2024, Stuttgart, 18h00</label>
+			<img src="imagenes/espana.png" alt="espana bandera">
+			<label style="text-align: right;">España</label>
+			<label style="text-align: center;">2</label>
+			<label style="text-align: center;">-</label>
+			<label style="text-align: center;">1</label>			
+			<label>Alemania</label>
+			<img src="imagenes/alemania.png" alt="alemania bandera">
+			
+			<!-- Xxxxx - Xxxxx -->
+			<label class="partido">05/07/24, Hamburgo, 21h00</label>
+			<img src="imagenes/Portugal.png" alt="portugal bandera">
+			<label style="text-align: right;">Portugal</label>
+			<label style="text-align: center;">0 (3)</label>
+			<label style="text-align: center;">-</label>
+			<label style="text-align: center;">0 (5)</label>			
+			<label>Francia</label>
+			<img src="imagenes/francia.png" alt="francia bandera">			
+	</fieldset>
+	
+	<fieldset class="jornada1"> <!-- Cuartos > 06/07/2024 -->
+		<legend>06/07/2024</legend>
+			<!-- Xxxxx - Xxxxx -->
+			<label class="partido">06/07/24, Düsseldorf, 18h00</label>
+			<img src="imagenes/inglaterra.png" alt="inglaterra bandera">
+			<label style="text-align: right;">Inglaterra</label>
+			<label style="text-align: center;">1 (5)</label>
+			<label style="text-align: center;">-</label>
+			<label style="text-align: center;">1 (3)</label>			
+			<label>Suiza</label>
+			<img src="imagenes/suiza.png" alt="suiza bandera">
+			
+			<!-- Xxxxx - Xxxxx -->
+			<label class="partido">06/07/24, Berlín, 21h00</label>
+			<img src="imagenes/paises_bajos.png" alt="paises bajos bandera">
+			<label style="text-align: right;">Países Bajos</label>
+			<label style="text-align: center;">2</label>
+			<label style="text-align: center;">-</label>
+			<label style="text-align: center;">1</label>			
+			<label>Turquía</label>
+			<img src="imagenes/turquia.png" alt="turquia bandera">
+	</fieldset>
+<!--
+	<table class="tabla_submit">
+		<tr>
+			<th><input type="submit" name="enviar_user1" value="Enviar Marcelino"></th>
+			<th><input type="submit" name="enviar_user2" value="Enviar Dani"></th>
+			<th><input type="submit" name="enviar_user3" value="Enviar Pipo"></th>
+			<th><input type="submit" name="enviar_user4" value="Enviar Carlos"></th>
+			<th><input type="submit" name="enviar_user5" value="Enviar Adan"></th>
+		</tr>			
+	</table>
+
+	<br>
+	
+	<label for="password" class="label_password">Contraseña:     </label>
+	<input type="password" name="password" id="password">
+	<hr>
+-->
+</form>
+	
+</body>
+
+</html>

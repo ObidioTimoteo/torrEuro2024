@@ -1,0 +1,240 @@
+/* 	============================
+	    *** ESTILO HEADER ***
+	============================ */
+
+header table {
+	width: 100%;
+	/* border: 3px solid black; */
+	background-color: white;
+	}
+
+header table th {
+	vertical-align: bottom;	
+	padding-left: 35px;
+	text-align: left;	
+	font-size: 25px;
+	font-weight: bold;		
+	/* border: 3px solid black; */
+}
+
+header table th:first-child {
+	width: 80%;
+}
+
+header img {
+	width: 120px;
+	height: 60px;			
+	}
+	
+
+/* 	============================
+	      *** NAVEGADOR ***
+	============================ */
+	
+nav ul {	
+	list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+	margin-left: 30px;
+	list-style-type: none;	
+}
+
+nav ul li a {
+    display: block;
+    padding: 0px 20px;
+	text-decoration: none;
+	font-size: 20px;
+    color: darkblue;
+	font-weight: bold;	
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;    
+	left: 0;
+    background-color: #f9f9f9;
+    border: 0px solid #ccc;
+}
+
+nav ul li:hover ul {
+    display: block;	
+}
+
+nav ul li ul li {
+	margin-left: 5px;
+    display: block;
+	margin-bottom: 10px;	
+	list-style-type: none;
+}
+
+nav ul li ul li a {
+    font-size: 15px;	
+	padding: 0px 5px;
+    color: #333;
+    white-space: nowrap;
+}
+
+.activo {
+	color: darkblue;
+}
+
+.menuactivo {
+	background-color: darkblue;
+	color: white;
+}
+
+/* 	============================
+	    *** TABLE CONSULTA***
+	============================ */
+	
+.consulta {
+    display: flex;
+    justify-content: center;
+}
+
+.consulta table {	
+	margin-top: 20px;
+	width: 100%;
+    border-collapse: collapse;
+	font-weight: bold;
+}
+
+.consulta th, .consulta td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+.consulta th {
+    background-color: lightgray;
+    color: darkblue;
+}
+		
+.consulta tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+		
+.consulta tr:nth-child(even) {
+    background-color: white;
+}
+		
+.consulta td {
+    color: black;
+}
+
+/* Alineación específica para columnas */
+.consulta td:nth-child(1), .consulta td:nth-child(2), .consulta th:nth-child(1), .consulta th:nth-child(2) {
+    text-align: right;
+}
+		
+.consulta td:nth-child(n+3), .consulta th:nth-child(n+3) {
+    text-align: center;
+}
+
+/* Anchura específica para las columnas 4, 6, 8, 10 y 12 */
+.consulta td:nth-child(4), .consulta td:nth-child(6), .consulta td:nth-child(8), .consulta td:nth-child(10), .consulta td:nth-child(12) {
+    width: 5%;
+}
+
+/* Anchura y color específico para las columnas 3, 4, 5, 6 y 7 */
+.consulta td:nth-child(5), .consulta td:nth-child(7), .consulta td:nth-child(9), .consulta td:nth-child(11), .consulta td:nth-child(13) {
+    width: 5%;
+  	color: darkred;
+}
+
+/* Anchura específica para la columna 1 */
+.consulta th:nth-child(1), .consulta td:nth-child(1) {
+    width: 8%;
+}
+
+
+/* Anchura específica para la columna 2
+.consulta th:nth-child(2), .consulta td:nth-child(2) {
+    width: 10%;
+}
+*/
+
+/* Anchura específica para la columna 3 */
+.consulta th:nth-child(3), .consulta td:nth-child(3) {
+    width: 5%;
+}
+
+.consulta img {
+	width: 30px;
+	height: 30px;			
+	}
+
+
+
+/* 	============================
+	 *** TABLE CLASIFICACION***
+	============================ */
+	
+.clasificacion {
+    display: flex;
+    justify-content: center;
+}
+
+.clasificacion table {	
+	margin-top: 20px;
+	width: 30%;
+    border-collapse: collapse;
+	font-weight: bold;
+}
+
+.clasificacion th, .clasificacion td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+.clasificacion th {
+    background-color: lightgray;
+    color: darkblue;
+}
+		
+.clasificacion tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+		
+.clasificacion tr:nth-child(even) {
+    background-color: white;
+}
+		
+.clasificacion td {
+    color: black;
+}
+
+/* Alineación específica para columnas */
+.clasificacion td:nth-child(1), .clasificacion td:nth-child(2), .clasificacion th:nth-child(1), .clasificacion th:nth-child(2) {
+    text-align: right;
+}
+		
+.clasificacion td:nth-child(n+3), .clasificacion th:nth-child(n+3) {
+    text-align: center;
+}
+
+/* Anchura específica para la columna 1 */
+.clasificacion th:nth-child(1), .clasificacion td:nth-child(1) {
+    width: 10%;
+}
+
+/* Anchura específica para la columna 2 */
+.clasificacion th:nth-child(2), .clasificacion td:nth-child(2) {
+    width: 55%;
+}
+
+
+
+
+
+
+
+
+
+

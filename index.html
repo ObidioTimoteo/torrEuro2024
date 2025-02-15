@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Cabecera del Documento -->
+<head>
+	<meta charset="utf-8">
+	<title>TorrEUro2024</title>
+  	<link rel="icon" href="imagenes/leon.png" type="image/png">
+	<!-- CSS externo para añadir estilos -->
+	<link rel="stylesheet" type="text/css" href="index.css">
+  	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+</head>
+
+<body>
+	<header>	
+		<!-- Si lo hicieramos con CSS en línea: <h1 style="text-align:center;">Hola que tal</h1> -->
+		<table>
+			<tr>			
+				<th style="text-align:left; border-bottom: 2px solid black;"><p>INICIO</p></th>				
+				<th style="text-align:right; padding-right: 30px; border-bottom: 2px solid black;"><img src="imagenes/logoEuro2024.png" alt="Logo Euro2024"></th>
+			</tr>			
+			<tr>
+				<td>
+					<nav>
+						<ul style="margin-top: 30px;">
+							<li><a class="menuactivo">INICIO</a></li>
+							<li><a href="apuestas_generales.html">APUESTAS</a>
+								<ul>
+									<li><a>____________________</a></li>
+                                  	<li><a style="color: darkgrey;">Apuestas Generales</a></li>
+									<li><a style="color: darkred;" href="jornada1b.html">Jornada 1</a></li>
+									<li><a style="color: darkred;" href="jornada2b.html">Jornada 2</a></li>
+									<li><a style="color: darkred;" href="jornada3.html">Jornada 3</a></li>
+									<li><a style="color: darkred;" href="octavos.html">Octavos</a></li>
+									<li><a style="color: darkred;" href="cuartos.html">Cuartos</a></li>
+									<li><a style="color: darkred;" href="semis.html">Semifinales</a></li>
+									<li><a class="activo" href="final.html">Final</a></li>
+								</ul>
+							</li>
+							<li><a href="consultar_apuestas.php">CONSULTAR</a></li>
+							<li><a href="clasificacion.html">CLASIFICACIÓN</a></li>
+						</ul>		
+					</nav>
+				</td>
+			</tr>			
+		</table>			
+	</header>
+	
+	<div class="disclaimer">
+	<p class="titulo">Reglas del Sitio y Exención de Responsabilidad</p>
+	<p>Bienvenido a nuestro sitio web de apuestas para la Eurocopa 2024. Queremos aclarar que este sitio está destinado únicamente para fines de entretenimiento y ocio.
+	 Las siguientes reglas y exenciones de responsabilidad se aplican a todos los usuarios:</p>
+	<ol>
+        <li><strong>Carácter Recreativo:</strong> Nuestro sitio web es una plataforma de entretenimiento donde los amigos pueden hacer predicciones sobre los resultados de la Eurocopa 2024. No se realizarán apuestas monetarias ni se intercambiarán bienes o servicios de ninguna índole.</li>
+        <li><strong>Sin Apuestas Reales:</strong> No se aceptan ni se facilitan apuestas con dinero real ni cualquier otra forma de apuesta que implique valor monetario o material. Cualquier predicción o apuesta realizada en este sitio es puramente simbólica y no tiene ningún valor económico.</li>
+        <li><strong>Propósito de Diversión:</strong> El objetivo principal de este sitio es proporcionar un espacio para la diversión y la camaradería entre amigos durante la Eurocopa 2024. Pedimos a todos los usuarios que participen con un espíritu de deportividad y disfruten de la experiencia sin implicaciones económicas.</li>
+        <li><strong>Exención de Responsabilidad:</strong> Los administradores del sitio no se responsabilizan por cualquier malentendido o conflicto que pueda surgir del uso de esta plataforma. Todos los usuarios aceptan participar bajo su propia responsabilidad y entienden que este sitio es exclusivamente para fines recreativos.</li>
+    </ol>	
+	</div>
+	
+	<div class="puntuacion">
+	<p class="titulo">Reglas de puntuación</p>
+	<p>Se aplicará el siguiente criterio de puntuación:</p>
+	<ul>
+        <li style="margin-left: 30px;"><strong>Apuestas Generales</strong>
+			<ul>
+				<li><strong>Equipos</strong>
+					<ul>
+						<li>Acierto 4 equipos semifinalistas: 	+30 puntos</li>
+                      	<li>Acierto 3 equipos semifinalistas: 	+20 puntos</li>
+                      	<li>Acierto 2 equipos semifinalistas: 	+10 puntos</li>
+                      	<li>Acierto 1 equipo semifinalista: 	+5 puntos</li>
+                        <li>Acierto 2 equipos finalistas: 		+20 puntos</li>
+						<li>Acierto 1 equipo finalista: 		+10 puntos</li>
+						<li>Acierto equipo campeón: 			+25 puntos</li>
+						<li>Acierto equipo subcampeón: 			+15 puntos</li>
+						<li>Acierto equipo máximo goleador:		+10 puntos</li>											
+					</ul>
+				</li>
+				<li><strong>Jugadores</strong>
+					<ul>
+						<li>Máximo goleador: 	+15 puntos</li>
+						<li>MVP: 				+15 puntos</li>						
+					</ul>
+				</li>
+				<li><strong>España</strong>
+					<ul>
+						<li>Máximo goleador: 	+10 puntos</li>
+						<li>Clasificación: 		+15 puntos</li>						
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<br>
+		<li><strong>Resultados</strong>
+			<ul>		
+				<li><strong>Fase de Grupos</strong>
+					<ul>
+					<li>Acierto 1 X 2: 				+5 puntos</li>
+					<li>Acierto resultado exacto: 	+5 puntos</li>
+					</ul>
+				</li>
+				<li><strong>Octavos</strong>
+					<ul>
+					<li>Acierto 1 X 2: 				+6 puntos</li>
+					<li>Acierto resultado exacto: 	+6 puntos</li>
+					</ul>
+				</li>
+				<li><strong>Cuartos</strong>
+					<ul>
+					<li>Acierto 1 X 2: 				+8 puntos</li>
+					<li>Acierto resultado exacto: 	+8 puntos</li>
+					</ul>
+				</li>
+				<li><strong>Semifinales</strong>
+					<ul>
+					<li>Acierto 1 X 2: 				+10 puntos</li>
+					<li>Acierto resultado exacto: 	+10 puntos</li>
+					</ul>
+				</li>
+				<li><strong>Final</strong>
+					<ul>
+					<li>Acierto 1 X 2: 				+15 puntos</li>
+					<li>Acierto resultado exacto: 	+15 puntos</li>
+					</ul>
+				</li>        
+			</ul>
+		</li>
+	</div>
+	
+</body>
+
+</html>
