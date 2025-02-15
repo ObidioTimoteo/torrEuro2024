@@ -6,10 +6,7 @@ Con la disputa de la Eurocopa del 2024, y con el único objetivo de comenzar
 a prácticar mis habilidades en el desarrollo web, realicé una web para que
 5 amigos pudiéramos realizar apuestas sobre los resultados del torneo.
 
-
-<center>
-  <img src="imagenes/Captura1.JPG" alt="Imagen del proyecto" width="500" />
-</center>
+  <img src="imagenes/Captura1.JPG" alt="Imagen del proyecto" width="650" />
 
 > Sé que es una web poco óptima, nada segura y no muy atractiva, pero es la
 > primera web que creé, que alojé y publiqué. Era funcional y cumplió con
