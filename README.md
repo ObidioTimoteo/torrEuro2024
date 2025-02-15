@@ -10,7 +10,7 @@ a prácticar mis habilidades en el desarrollo web, realicé una web para que
 > primera web que creé, que alojé y publiqué. Era funcional y cumplió con
 > el propósito que tenía como objetivo.
 
-<div style="text-align: center;">
+<div style="display: flex; justify-content: center;">
   <img src="imagenes/Captura1.JPG" alt="Imagen del proyecto" width="500" />
 </div>
 
