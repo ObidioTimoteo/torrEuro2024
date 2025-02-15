@@ -1,5 +1,7 @@
 # torrEuro2024
 > Web para apuestas deportivas amistosas Eurocopa 2024
+>
+
 Con la disputa de la Eurocopa del 2024, y con el único objetivo de comenzar
 a prácticar mis habilidades en el desarrollo web, realicé una web para que
 5 amigos pudiéramos realizar apuestas sobre los resultados del torneo.
