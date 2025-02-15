@@ -10,4 +10,4 @@ a prácticar mis habilidades en el desarrollo web, realicé una web para que
 > primera web que creé, que alojé y publiqué. Era funcional y cumplió con
 > el propósito que tenía como objetivo.
 
-![Imagen del proyecto1](imagenes/Captura1.JPG)
+<img src="imagenes/Captura1.JPG" alt="Imagen del proyecto" width="300" />
